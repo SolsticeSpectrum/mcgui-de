@@ -20,3 +20,5 @@ Bungee/Velocity spoofing is a method used to bypass the proxy. Here's how it wor
 4. If successful, the backend server accepts this connection as if it came from the legitimate proxy, bypassing intended security measures.
 
 This vulnerability exists because the backend servers don't have a foolproof way to verify that the incoming connection is genuinely from the authorized proxy server.
+
+For Velocity spoof however, the attacker has to know the secret key which is not optional so as long as the key isn't leaked, modern forwarding stays a safer alternative to BungeeGuard which can be bypassed without knowing it's secret.
